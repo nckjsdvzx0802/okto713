@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: jfmgd
   template:
     metadata:
       labels:
-        app: ray
+        app: jfmgd 
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/jfmgd:latest
+        name: jfmgd
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "e17c9810-a7b4-4316-ad64-9e5432caf963"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vlng135"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "e17c9810-a7b4-4316-ad64-9e5432caf963"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vmcjuj135"
         - name: Share_Path
           value: "/v2link"
